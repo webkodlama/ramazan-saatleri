@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ramazan Huzuru</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scene" aria-hidden="true">
+    <div class="sky">
+      <div class="stars"></div>
+      <div class="moon"></div>
+      <div class="glow"></div>
+      <div class="lanterns">
+        <span class="lantern"></span>
+        <span class="lantern"></span>
+        <span class="lantern"></span>
+      </div>
+      <div class="clouds">
+        <span class="cloud c1"></span>
+        <span class="cloud c2"></span>
+        <span class="cloud c3"></span>
+      </div>
+    </div>
+    <div class="dunes"></div>
+  </div>
+
+  <main class="content">
+    <p class="eyebrow">Ramazan Ayı</p>
+    <h1>Huzurun, paylaşmanın ve içe dönüşün vakti</h1>
+    <p class="lead">
+      Ramazan; kalbi sadeleştiren, sofrayı bereketlendiren, geceyi dua ile aydınlatan bir zaman.
+      Burada, dingin bir atmosfer eşliğinde niyetini tazele, ritmini yavaşlat ve huzuru hisset.
+    </p>
+
+    <div class="cards">
+      <article class="card">
+        <h2>Sahurda Niyet</h2>
+        <p>Günün başlangıcı: sessizlik, şükür ve gönül açıklığı.</p>
+      </article>
+      <article class="card">
+        <h2>İftarda Paylaşım</h2>
+        <p>Bir lokmanın bereketi; paylaşınca artar, gülümseme olur.</p>
+      </article>
+      <article class="card">
+        <h2>Teravihte Huzur</h2>
+        <p>Geceyi aydınlatan dua; kalbi derinleştirir, zihni arındırır.</p>
+      </article>
+    </div>
+
+    <section class="section">
+      <h2 class="section-title">Bugünün Zikri</h2>
+      <p class="section-text">“Ya Selam” - Sükûneti ve huzuru çağıran bir hatırlayış.</p>
+      <p class="section-note">Niyet: Kalpteki sakinliği güçlendirmek.</p>
+    </section>
+
+    <section class="section">
+      <div class="section-row">
+        <h2 class="section-title">İstanbul Sahur & İftar</h2>
+        <span class="date">22 Şubat 2026 - 22 Mart 2026</span>
+      </div>
+      <p class="section-text">
+        Sahur = imsak, iftar = akşam ezanı. Güneş ve yatsı gösterilmez.
+      </p>
+      <div class="times-list" id="timesList" aria-live="polite"></div>
+      <p class="section-note" id="timesNote">
+        Kaynak: Vakt-i Huzur imsakiye. 20-22 Mart 2026 aralığı Ramazan sonrası olduğu için sahur/iftar yok.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Dua Köşesi</h2>
+      <p class="section-text">
+        “Rabbim, kalbimi arındır, dilimi hayırla meşgul et, rızkımı bereketlendir.”
+      </p>
+      <div class="dua-tags">
+        <span>Şükür</span>
+        <span>Merhamet</span>
+        <span>Paylaşım</span>
+      </div>
+    </section>
+
+    <div class="cta">
+      <button class="btn" id="calmToggle">Ambiyansı Sadeleştir</button>
+      <button class="btn ghost" id="soundToggle">Ambiyansı Dinle</button>
+      <span class="hint">Yıldızları ve hareketi azaltır, sesi aç/kapat.</span>
+    </div>
+  </main>
+
+  <audio id="ambience" preload="auto" loop>
+    <source src="assets/ramazan-ambience.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
